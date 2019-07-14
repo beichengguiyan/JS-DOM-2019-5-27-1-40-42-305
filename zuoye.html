@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>定时器示例</title>
+</head>
+
+<body>
+    <input type="text" id="Account number">
+    <input type="text" id="Password">
+    <br>
+    <button id="Sign in" onclick="check()">登录</button>
+    <script>
+        function check() {
+            var a = document.getElementById("Account number").value;
+            var b = document.getElementById("Password").value;
+            if ((a == 123) && (b == 123)) {
+                document.write("即将登录");
+            } else {
+                document.getElementById("Password").value = "";
+                alert("您的账户或密码错误，请重新登录!");
+            }
+        }
+    </script>
+</body>
+
+</html>
